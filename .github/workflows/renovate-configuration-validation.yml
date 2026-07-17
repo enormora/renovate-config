@@ -1,4 +1,4 @@
-name: CI
+name: Renovate Configuration Validation
 
 on:
   pull_request:
@@ -11,8 +11,8 @@ permissions:
   contents: read
 
 jobs:
-  validate-renovate-config:
-    name: Validate Renovate config
+  validate-renovate-configuration:
+    name: Validate Renovate configuration
     runs-on: ubuntu-latest
 
     steps:
@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: 24
 
-      - name: Validate Renovate config
+      - name: Validate Renovate configuration
         run: |
           npx --yes --package renovate renovate-config-validator --strict --no-global \
             default.json \
