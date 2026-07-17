@@ -1,0 +1,5 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Let Renovate perform automerges during its own runs.",
+  "platformAutomerge": false
+}

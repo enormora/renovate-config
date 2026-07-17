@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "npm constraint for projects that support Node.js 22.",
+  "constraints": {
+    "npm": "10.9.8"
+  },
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "npm"
+      ],
+      "allowedVersions": "<11.0.0"
+    }
+  ]
+}

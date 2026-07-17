@@ -1,0 +1,43 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Default Renovate policy for Enormora repositories.",
+  "extends": [
+    "config:recommended",
+    "group:monorepos",
+    "helpers:pinGitHubActionDigests"
+  ],
+  "labels": [
+    "renovate",
+    "upgrade"
+  ],
+  "dependencyDashboard": false,
+  "configMigration": true,
+  "rebaseWhen": "behind-base-branch",
+  "minimumReleaseAge": "3 days",
+  "automerge": true,
+  "automergeType": "pr",
+  "automergeStrategy": "merge-commit",
+  "ignoreTests": false,
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "/^@enormora\\/eslint-config/",
+        "/^@eslint\\//",
+        "/^eslint($|-)/"
+      ],
+      "groupName": "Linting-related dependencies",
+      "groupSlug": "linting"
+    },
+    {
+      "matchPackageNames": [
+        "/^@packtory\\//"
+      ],
+      "groupName": "@packtory dependencies",
+      "groupSlug": "packtory"
+    }
+  ]
+}
