@@ -12,8 +12,8 @@ Merge queue repositories:
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>enormora/renovate-config#1.0.0",
-    "github>enormora/renovate-config:github-automerge#1.0.0"
+    "github>enormora/renovate-config#1.0.1",
+    "github>enormora/renovate-config:github-automerge#1.0.1"
   ]
 }
 ```
@@ -24,8 +24,8 @@ Repositories without a merge queue:
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>enormora/renovate-config#1.0.0",
-    "github>enormora/renovate-config:renovate-automerge#1.0.0"
+    "github>enormora/renovate-config#1.0.1",
+    "github>enormora/renovate-config:renovate-automerge#1.0.1"
   ]
 }
 ```
@@ -36,9 +36,9 @@ Node.js 22 support:
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>enormora/renovate-config#1.0.0",
-    "github>enormora/renovate-config:renovate-automerge#1.0.0",
-    "github>enormora/renovate-config:node22#1.0.0"
+    "github>enormora/renovate-config#1.0.1",
+    "github>enormora/renovate-config:renovate-automerge#1.0.1",
+    "github>enormora/renovate-config:node22#1.0.1"
   ]
 }
 ```
@@ -49,8 +49,8 @@ Local project settings stay local:
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>enormora/renovate-config#1.0.0",
-    "github>enormora/renovate-config:github-automerge#1.0.0"
+    "github>enormora/renovate-config#1.0.1",
+    "github>enormora/renovate-config:github-automerge#1.0.1"
   ],
   "ignorePaths": [
     "**/node_modules/**",
@@ -60,6 +60,8 @@ Local project settings stay local:
 ```
 
 Pinned preset versions use Git tags. Renovate updates pinned preset versions when a newer tag exists.
+
+Commit SHA pins are possible as manual pins, but Renovate does not update them automatically.
 
 ## Presets
 
