@@ -2,25 +2,12 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "local>enormora/renovate-config",
+    "local>enormora/renovate-config:node22",
     "local>enormora/renovate-config:renovate-automerge"
   ],
   "renovate-config": {
     "managerFilePatterns": [
       "/^(default|github-automerge|node22|renovate-automerge)\\.json$/"
     ]
-  },
-  "packageRules": [
-    {
-      "matchFileNames": [
-        "node22.json"
-      ],
-      "matchPackageNames": [
-        "npm"
-      ],
-      "matchDepTypes": [
-        "tool-constraint"
-      ],
-      "allowedVersions": "<11.0.0"
-    }
-  ]
+  }
 }
