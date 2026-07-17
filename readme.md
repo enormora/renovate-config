@@ -12,8 +12,8 @@ Merge queue repositories:
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>enormora/renovate-config#1.0.2",
-    "github>enormora/renovate-config:github-automerge#1.0.2"
+    "github>enormora/renovate-config#1.0.0",
+    "github>enormora/renovate-config:github-automerge#1.0.0"
   ]
 }
 ```
@@ -24,8 +24,8 @@ Repositories without a merge queue:
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>enormora/renovate-config#1.0.2",
-    "github>enormora/renovate-config:renovate-automerge#1.0.2"
+    "github>enormora/renovate-config#1.0.0",
+    "github>enormora/renovate-config:renovate-automerge#1.0.0"
   ]
 }
 ```
@@ -36,9 +36,9 @@ Node.js 22 support:
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>enormora/renovate-config#1.0.2",
-    "github>enormora/renovate-config:renovate-automerge#1.0.2",
-    "github>enormora/renovate-config:node22#1.0.2"
+    "github>enormora/renovate-config#1.0.0",
+    "github>enormora/renovate-config:renovate-automerge#1.0.0",
+    "github>enormora/renovate-config:node22#1.0.0"
   ]
 }
 ```
@@ -49,8 +49,8 @@ Local project settings stay local:
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>enormora/renovate-config#1.0.2",
-    "github>enormora/renovate-config:github-automerge#1.0.2"
+    "github>enormora/renovate-config#1.0.0",
+    "github>enormora/renovate-config:github-automerge#1.0.0"
   ],
   "ignorePaths": [
     "**/node_modules/**",
@@ -63,7 +63,7 @@ Pinned preset versions use Git tags. Renovate updates pinned preset versions whe
 
 Do not use commit SHAs here. Renovate can resolve them as Git refs, but it updates preset pins through the Git tags datasource.
 
-This repo also has its own `renovate.json`. The self extends are intentionally unpinned, and `renovate-config.managerFilePatterns` makes Renovate scan these preset files. That lets Renovate update tool constraints such as `constraints.npm` in `node22.json`, plus GitHub Action digests in workflows.
+This repository also has its own `renovate.json`. The self extends use `local>` and stay unpinned. `renovate-config.managerFilePatterns` makes Renovate scan these preset files. That lets Renovate update tool constraints such as `constraints.npm` in preset files, plus GitHub Action digests in workflows.
 
 ## Presets
 
