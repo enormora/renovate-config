@@ -61,7 +61,9 @@ Local project settings stay local:
 
 Pinned preset versions use Git tags. Renovate updates pinned preset versions when a newer tag exists.
 
-Commit SHA pins are possible as manual pins, but Renovate does not update them automatically.
+Do not use commit SHAs here. Renovate can resolve them as Git refs, but it updates preset pins through the Git tags datasource.
+
+This repo also has its own `renovate.json`. Renovate validates the presets, updates pinned preset tags in `renovate.json`, and updates tool constraints such as `constraints.npm` in `node22.json`.
 
 ## Presets
 
