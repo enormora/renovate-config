@@ -10,6 +10,7 @@
     "renovate",
     "upgrade"
   ],
+  "commitMessagePrefix": "⬆️ ",
   "dependencyDashboard": false,
   "configMigration": true,
   "rebaseWhen": "behind-base-branch",

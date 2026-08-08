@@ -67,7 +67,7 @@ This repository also has its own `renovate.json`. The self extends use `local>` 
 
 ## Presets
 
-- `default.json`: base policy, labels, release age, PR automerge, lock file maintenance, GitHub Action digest pinning, linting grouping, `@packtory/*` grouping.
+- `default.json`: base policy, labels, commit message prefix, release age, PR automerge, lock file maintenance, GitHub Action digest pinning, linting grouping, `@packtory/*` grouping.
 - `github-automerge.json`: GitHub performs automerges. Use for merge queues.
 - `renovate-automerge.json`: Renovate performs automerges during its own runs.
 - `node22.json`: pins the npm tool constraint below npm 11 for Node.js 22 projects.
