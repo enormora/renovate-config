@@ -35,6 +35,13 @@
     },
     {
       "matchPackageNames": [
+        "/^@overkill-dev\\//"
+      ],
+      "groupName": "@overkill-dev dependencies",
+      "groupSlug": "overkill-dev"
+    },
+    {
+      "matchPackageNames": [
         "/^@packtory\\//"
       ],
       "groupName": "@packtory dependencies",
