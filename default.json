@@ -21,7 +21,10 @@
   "ignoreTests": false,
   "lockFileMaintenance": {
     "enabled": true,
-    "automerge": true
+    "automerge": true,
+    "statusCheckNames": {
+      "minimumReleaseAge": null
+    }
   },
   "packageRules": [
     {

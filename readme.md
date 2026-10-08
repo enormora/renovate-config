@@ -65,6 +65,8 @@ Do not use commit SHAs here. Renovate can resolve them as Git refs, but it updat
 
 This repository also has its own `renovate.json`. The self extends use `local>` and stay unpinned. `renovate-config.managerFilePatterns` makes Renovate scan these preset files. That lets Renovate update tool constraints such as `constraints.npm` in preset files, plus GitHub Action digests in workflows.
 
+Lock file maintenance keeps the three-day release age setting but disables its `renovate/stability-days` status check. Renovate cannot determine a release timestamp for the maintenance operation; Renovate passes the age cutoff to npm during lock file generation.
+
 ## Presets
 
 - `default.json`: base policy, labels, commit message prefix, release age, PR automerge, lock file maintenance, GitHub Action digest pinning, package grouping.
