@@ -13,6 +13,7 @@
   "commitMessagePrefix": "⬆️ ",
   "dependencyDashboard": false,
   "configMigration": true,
+  "separateMajorMinor": false,
   "rebaseWhen": "behind-base-branch",
   "minimumReleaseAge": "3 days",
   "automerge": true,
