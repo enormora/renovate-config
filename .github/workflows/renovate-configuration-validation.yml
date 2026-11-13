@@ -28,7 +28,7 @@ jobs:
         run: |
           npx --yes --package renovate renovate-config-validator --strict --no-global \
             default.json \
-            github-automerge.json \
+            github-merge-queue.json \
             node22.json \
             renovate-automerge.json \
             renovate.json
