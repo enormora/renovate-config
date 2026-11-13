@@ -11,7 +11,9 @@
     "upgrade"
   ],
   "commitMessagePrefix": "⬆️ ",
-  "dependencyDashboard": false,
+  "dependencyDashboard": {
+    "enabled": false
+  },
   "configMigration": true,
   "separateMajorMinor": false,
   "rebaseWhen": "behind-base-branch",
